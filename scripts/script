@@ -1,0 +1,40 @@
+function toggleSection() {
+    
+}
+function sumar() {
+    var numero1=parseInt(document.getElementById('myNumber1').value);
+        var numero2=parseInt(document.getElementById('myNumber2').value);
+        var resultS;
+        resultS=numero1+numero2;
+        alert("El resultado de la suma es: "+resultS);
+    
+}
+
+function restar() {
+    var numero1=parseInt(document.getElementById('myNumber1').value);
+        var numero2=parseInt(document.getElementById('myNumber2').value);
+        var resultR;
+        resultR=numero1-numero2;
+        alert("El resultado de la suma es: "+resultR);
+    
+}
+
+function multiplicar() {
+    var numero1=parseInt(document.getElementById('myNumber1').value);
+    var numero2=parseInt(document.getElementById('myNumber2').value);
+    var resultM;
+    resultM=numero1*numero2;
+    alert("El resultado de la suma es: "+resultM);
+  }   
+}
+
+function validarVacios(resultado,operacion) {
+    if(!isNaN(resultado)) {
+        imprimirMensaje(operacion,resultado);
+    } else {
+        document.getElementById('result').textContent = "Debe ingresar valores numericos";
+    }
+}
+function imprimirMensaje(op, res) {
+
+}
